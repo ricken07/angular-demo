@@ -1,0 +1,26 @@
+<div class="container p-2">
+  <div class="card">
+    <h5 class="card-header">AJOUTER UN PRODUIT</h5>
+    <div class="card-body">
+      <form #inputs="ngForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nom</label>
+          <input type="text" name="name" class="form-control" id="name" placeholder="Samsung S21" required>
+        </div>
+        <div class="mb-3">
+          <label for="price" class="form-label">Prix</label>
+          <input type="number" name="price" class="form-control" id="price" placeholder="5000" required>
+        </div>
+        <div class="mb-3">
+          <label for="imageUrl" class="form-label">Image Url</label>
+          <input type="text" name="imageUrl" class="form-control" id="imageUrl" placeholder="" required>
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+          <textarea class="form-control" name="description" id="description" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Ajouter</button>
+      </form>
+    </div>
+  </div>
+</div>
