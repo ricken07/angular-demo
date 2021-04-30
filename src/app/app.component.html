@@ -1,25 +1,21 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-info">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">APP</a>
+    <a class="navbar-brand" href="#">Demo APP</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a routerLink="/" class="nav-link active" aria-current="page">Home</a>
+          <a class="nav-link active" aria-current="page" routerLink="/">Accueille</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/add-product">Add Product</a>
+          <a class="nav-link" routerLink="/ajouter-produit">Ajouter un produit</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/products">Products</a>
+          <a class="nav-link" routerLink="/liste-produits">Nos produits</a>
         </li>
       </ul>
-      <div class="d-flex pull-right">
-        <a class="btn btn-outline-dark" (click)="onLogin()">Connexion</a>
-        <a class="btn btn-outline-dark" (click)="onLogout()">Déconnexion</a>
-      </div>
     </div>
   </div>
 </nav>

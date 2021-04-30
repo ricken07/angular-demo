@@ -1,33 +1,36 @@
 import { NgModule } from '@angular/core';
+import {NgbModalModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { DetailsProductComponent } from './details-product/details-product.component';
-import { ListProductComponent } from './list-product/list-product.component';
+import {RouterModule} from '@angular/router';
+import { AccueilleComponent } from './accueille/accueille.component';
+import { AjoutProduitComponent } from './ajout-produit/ajout-produit.component';
+import { ListProduitsComponent } from './list-produits/list-produits.component';
+import {AppRoutingModule} from './app-routing.module';
+import { DetailProduitComponent } from './detail-produit/detail-produit.component';
 import {ProductService} from './services/product.service';
-import { HomeComponent } from './home/home.component';
-import { AddProductComponent } from './add-product/add-product.component';
-import { Error404Component } from './error404/error404.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DetailsProductComponent,
-    ListProductComponent,
-    HomeComponent,
-    AddProductComponent,
-    Error404Component
+    AccueilleComponent,
+    AjoutProduitComponent,
+    ListProduitsComponent,
+    DetailProduitComponent
   ],
   imports: [
     BrowserModule,
+    RouterModule,
     AppRoutingModule,
-    NgbModule,
     FormsModule,
     HttpClientModule,
+    NgbModule,
+    NgbModalModule,
+    NgbAlertModule
   ],
   providers: [
     ProductService
